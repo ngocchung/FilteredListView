@@ -25,7 +25,7 @@ An Android sample project that implements ListView with basic filtering.
 ```
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+Please look at my answer at the following question http://stackoverflow.com/questions/33417887/how-do-i-highlight-the-searched-text-in-my-search-filter.
 
 ## Installation
 
