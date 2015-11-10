@@ -163,9 +163,7 @@ public class HighlightArrayAdapter extends ArrayAdapter<String> {
             throw new IllegalStateException(
                     "ArrayAdapter requires the resource ID to be a TextView", e);
         }
-        // String item = getItem(position);
-        // text.setText(item);
-
+        
         // HIGHLIGHT...
 
         String fullText = getItem(position);
