@@ -104,7 +104,7 @@ public class HighlightArrayAdapter extends ArrayAdapter<String> {
                     final String valueText = value.toLowerCase();
 
                     // First match against the whole, non-splitted value
-                    if (valueText.startsWith(prefixString)) {
+                    if (valueText.startsWith(prefixString) || valueText.contains(prefixString)) {
                         newValues.add(value);
                     } else {
                         final String[] words = valueText.split(" ");
@@ -112,7 +112,7 @@ public class HighlightArrayAdapter extends ArrayAdapter<String> {
 
                         // Start at index 0, in case valueText starts with space(s)
                         for (int k = 0; k < wordCount; k++) {
-                            if (words[k].startsWith(prefixString)) {
+                            if (words[k].startsWith(prefixString) || word.contains(prefixString)) {
                                 newValues.add(value);
                                 break;
                             }
