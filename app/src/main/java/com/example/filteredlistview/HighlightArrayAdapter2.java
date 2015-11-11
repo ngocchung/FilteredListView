@@ -186,7 +186,7 @@ public class HighlightArrayAdapter2 extends ArrayAdapter<String> {
             Spannable spannable = new SpannableString(fullText);
             String[] searchWords = mSearchText.split(" ");
             for (String searchWord : searchWords) {
-                int startPos = fullText.toLowerCase(Locale.US).indexOf(searchWord);
+                int startPos = fullText.toLowerCase(Locale.US).indexOf(searchWord.toLowerCase(Locale.US));
                 int endPos = startPos + searchWord.length();
 
                 if (startPos != -1) {
